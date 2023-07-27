@@ -1,0 +1,209 @@
+:root {
+  --zero: #2A463B;
+  --one: #3C6255;
+  --two: #61876E;
+  --three: #269746;
+  --four: #C0C985;
+  --five: #8B6E55;
+  }
+body{
+  font-family: 'Alegreya', serif;
+}
+  /* ------------------Navbar------------------------- */
+.navbar .nav-link, .navbar-brand{
+  /* color: var(--five); */
+  /* color: var(--five) !important; */
+  color: white !important;
+  font-weight:800;
+  font-size: 18px;
+}
+.navbar{
+  /* background-color: var(--two) !important; */
+  z-index: 1000;
+}
+.navbar .nav-link{
+  font-size: 14px;
+  font-weight: 400;
+  
+}
+.navbar-nav.custom-nav {
+  
+  width: 60%;
+  padding-top: 18px;
+}
+.navbar-nav .nav-link.active {
+  text-decoration: underline;
+  color: white;
+}
+ .search-btn{
+  background-color: transparent;
+ }
+ .search-btn::placeholder{
+  color: white;
+ }
+
+ .navbar {
+  background-color: transparent; 
+  transition: 0.6s; 
+}
+
+.navbar.scrolled {
+  background-color: white !important; 
+  margin-left:0px !important; 
+  margin-top: 0px !important;
+}
+
+.navbar.scrolled .navbar-brand,
+.navbar.scrolled .navbar-nav .nav-link {
+  color: black !important; /* Text color when scrolled */
+}
+.navbar.scrolled .search-btn::placeholder{
+  color: black;
+ }
+ .navbar.scrolled  .search-btn{
+  border: 1px solid black;
+  }
+  .navbar.scrolled .search-icon{
+    color: var(--five) !important;
+    border: 1px solid black;
+  }
+  .nav-link, .navbar-brand {
+    color: white;
+  }
+  
+
+/* --------Home----- */
+.home{
+  background-image: url(images/home.jpg);
+  background-position: center center;
+  height: 110vh;
+  background-size: cover;
+}
+.green{
+  color: var(--five);
+  /* font-weight: 500; */
+}
+.title{
+  color: var(--zero);
+  line-height: 91.2px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.sec-title{
+  color: var(--zero);
+}
+.home-btn{
+  color: white;
+  background-color: var(--zero);
+}
+.home-btn:hover{
+  color: white;
+  background-color: var(--one);
+}
+.home-box{
+  margin-top: -160px;
+}
+
+/* ----------About Us----------- */
+.about-us{
+  height: fit-content;
+  /* background-color: #3C6255; */
+}
+.section-title{
+  color: var(--three);
+  /* text-decoration: underline dotted 2px ; */
+}
+.about-txt{
+  font-size: 20px;
+  color: var(--one);
+}
+
+/* ----------Our Products---------- */
+.prod-txt{
+  font-size: 24px;
+  color: var(--zero);
+}
+.prod-layer{
+  transition: all ease-out 0.6s;
+  transform: rotateY(180deg);
+
+}
+.details{
+  opacity: 0;
+  transition: all ease-out 0.3s;
+  top: 42%;
+  left: 30%;
+  text-decoration: none;
+  color: var(--four);
+  font-size: 25px;
+}
+.product-card:hover .details{
+  visibility: visible;
+  opacity: 1;
+ 
+}
+.product-card:hover .prod-layer{
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  transform: rotateY(360deg);
+  
+}
+
+/* ----------Contact--------- */
+.contact{
+  color: var(--zero);
+}
+.icon-circle{
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+.icon-serv:hover{
+  background-color: var(--two);
+  color: white;
+  transition: all 0.5s ease-out;
+}
+.icon-serv:hover i{
+  color: white;
+}
+.icon-serv i{
+  color: var(--two);
+}
+
+/* -------------footer----------- */
+.footer, .list-group  li {
+  background-color: #37574a;
+  color: var(--four);
+  
+}
+.list-group  li a {
+  background-color: #37574a;
+  color: var(--four);
+  text-decoration: none;
+}
+.footer h5{
+  padding-bottom: 15px;
+  color: rgb(213, 241, 213);
+}
+.footer span{
+  color: rgb(213, 241, 213);
+}
+footer {
+  background: var(--zero);
+  padding: 30px;
+
+}
+
+footer p {
+  
+  word-spacing: 2px;
+  line-height: 1.6;
+  
+  font-size: 15px;
+  color: #748182;
+}

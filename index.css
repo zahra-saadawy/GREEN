@@ -7,7 +7,9 @@
   --five: #8B6E55;
   }
 
-
+  element.style {
+    --bs-scroll-height: 100px;
+}
   /* ------------------Navbar------------------------- */
 .navbar-brand{
   color: white !important;
@@ -498,7 +500,7 @@ footer {
 
 
 .col-6{
-  width: 17rem;
+  /* width: 17rem; */
   padding-left: 10px;
   padding-bottom: 10px;
 }
